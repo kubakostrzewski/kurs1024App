@@ -1,7 +1,7 @@
 package model;
 
 public class Product {
-    private int id;
+    private long id;
     private String productName;
     private float price;
     private float weight;
@@ -25,7 +25,7 @@ public class Product {
         this.productCount = productCount;
     }
 
-    public int getId() {
+    public long getId() {
         return id;
     }
 
