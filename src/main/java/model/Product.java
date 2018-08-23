@@ -8,6 +8,15 @@ public class Product {
     private  String color;
     private int productCount;
 
+    public Product(int id, String productName, float price, float weight, String color, int productCount) {
+        this.id = id;
+        this.productName = productName;
+        this.price = price;
+        this.weight = weight;
+        this.color = color;
+        this.productCount = productCount;
+    }
+
     public void setPrice(float price) {
         this.price = price;
     }
@@ -38,5 +47,17 @@ public class Product {
 
     public int getProductCount() {
         return productCount;
+    }
+
+    @Override
+    public String toString() {
+        return "Product{" +
+                "id=" + id +
+                ", productName='" + productName + '\'' +
+                ", price=" + price +
+                ", weight=" + weight +
+                ", color='" + color + '\'' +
+                ", productCount=" + productCount +
+                '}';
     }
 }
