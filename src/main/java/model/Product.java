@@ -8,7 +8,7 @@ public class Product {
     private  String color;
     private int productCount;
 
-    public Product(int id, String productName, float price, float weight, String color, int productCount) {
+    public Product(long id, String productName, float price, float weight, String color, int productCount) {
         this.id = id;
         this.productName = productName;
         this.price = price;
@@ -51,13 +51,11 @@ public class Product {
 
     @Override
     public String toString() {
-        return "Product{" +
-                "id=" + id +
-                ", productName='" + productName + '\'' +
-                ", price=" + price +
-                ", weight=" + weight +
-                ", color='" + color + '\'' +
-                ", productCount=" + productCount +
-                '}';
+        return id + "#" +
+                productName + "#" +
+                price + "#" +
+                weight + "#" +
+                color + "#" +
+                productCount + "\n";
     }
 }

@@ -1,3 +1,5 @@
+package service;
+
 import model.User;
 import org.junit.Assert;
 import org.junit.Test;
